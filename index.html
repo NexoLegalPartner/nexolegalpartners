@@ -6,46 +6,85 @@
     <title>Nexo Legal Partners SAS</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
     <style>
+        /* Estilos base */
         body {
             font-family: 'Raleway', sans-serif;
             color: #003B5C;
             background: #FFFFFF;
             margin: 0;
             line-height: 1.6;
-            padding: 20px;
         }
-        h1, h2 {
-            font-family: 'Playfair Display', serif;
-        }
+        
+        /* Header (como tu imagen) */
         header {
             background: #003B5C;
             color: white;
-            padding: 2rem;
+            padding: 4rem 2rem;
             text-align: center;
+        }
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+        header h1 span {
+            display: block;
+            font-size: 2rem;
+            font-weight: 300;
+            margin-top: 0.5rem;
+        }
+        header p {
+            max-width: 800px;
+            margin: 2rem auto;
+            font-size: 1.1rem;
+        }
+
+        /* Sección de servicios */
+        .servicios {
+            padding: 3rem 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
         }
         .servicio {
             background: #FFFFFF;
-            border: 1px solid #D9D9D9;
-            margin: 1rem;
+            border-left: 4px solid #007B5F;
             padding: 1.5rem;
-            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        .servicio h3 {
+            color: #007B5F;
+            margin-top: 0;
+        }
+
+        /* Footer */
+        footer {
+            background: #003B5C;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Nexo Legal Partners SAS</h1>
-        <p>Soluciones legales estratégicas con un enfoque moderno y cercano.</p>
+        <h1>NEXO<br><span>LEGAL PARTNERS SAS</span></h1>
+        <p>Nexo Legal Partners SAS es una firma jurídica con sede en Bogotá, enfocada en brindar soluciones legales estratégicas a personas y empresas. Combinamos experiencia en litigios, derecho contractual, protección al consumidor y derecho cooperativo, con un enfoque moderno, cercano y práctico.</p>
     </header>
-    <section>
+
+    <section class="servicios">
         <h2>Nuestros Servicios</h2>
         <div class="servicio">
             <h3>Litigios</h3>
             <p>Representación judicial en todas las instancias.</p>
         </div>
+        <!-- Añade más servicios aquí -->
     </section>
+
     <footer>
-        <p>Contacto: info@nexolegal.com | Tel: +57 XXX XXX XXXX</p>
+        <p>Contacto: info@nexolegal.com | Tel: +57 000 0000 0000</p>
     </footer>
 </body>
 </html>
