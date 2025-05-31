@@ -26,7 +26,7 @@
         /* Título "NEXO" */
         header h1 {
             font-family: 'Cormorant Upright', serif;
-            font-size: 4.5rem;
+            font-size: 6rem;
             color: #100b22;  /* Nuevo color oscuro */
             margin: 0;
             letter-spacing: 2px;
@@ -43,12 +43,13 @@
             letter-spacing: 1px;
         }
         
-        /* Línea dorada divisoria */
-        .linea-divisoria {
-            width: 100px;
-            height: 2px;
-            background: #cb9d47; /* Oro miel */
-            margin: 1.5rem auto;
+.linea-divisoria {
+    display: inline-block;  /* Asegura que la línea siga el ancho del texto */
+    width: 100%;           /* Ocupará el 100% del ancho de su contenedor (el h2) */
+    height: 2px;
+    background: #cb9d47;   /* Color dorado actualizado */
+    margin: 1.5rem auto 0; /* Ajusta el margen superior */
+}
         }
         
         /* Descripción */
