@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nexo Legal Partners SAS</title>
-    <!-- Tipografías -->
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@600&family=Montserrat:wght@500;600&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
     <style>
         /* ESTILOS BASE */
@@ -16,9 +15,9 @@
             color: #000000;
         }
         
-        /* HEADER (Fondo morado) */
+        /* HEADER (Fondo oscuro) */
         header {
-            background: #3E1E68; /* Morado oscuro */
+            background: #100b22; /* Nuevo color de fondo */
             padding: 5rem 2rem;
             text-align: center;
         }
@@ -26,37 +25,43 @@
         /* Título "NEXO" */
         header h1 {
             font-family: 'Cormorant Upright', serif;
-            font-size: 6rem;
-            color: #100b22;  /* Nuevo color oscuro */
+            font-size: 6rem; /* Tamaño aumentado */
+            color: #dcc5a3; /* Beige dorado claro */
             margin: 0;
             letter-spacing: 2px;
             font-weight: 600;
+        }
+        
+        /* Contenedor título + línea */
+        .titulo-con-linea {
+            display: inline-block;
+            text-align: center;
+            margin: 0.5rem 0;
         }
         
         /* Subtítulo "LEGAL PARTNERS SAS" */
         header h2 {
             font-family: 'Montserrat', sans-serif;
             font-size: 1.8rem;
-            color: #cb9d47; /* Oro miel */
-            margin: 1rem 0 0;
+            color: #cb9d47; /* Nuevo dorado (#cb9d47) */
+            margin: 0;
             font-weight: 600;
             letter-spacing: 1px;
         }
         
-.linea-divisoria {
-    display: inline-block;  /* Asegura que la línea siga el ancho del texto */
-    width: 100%;           /* Ocupará el 100% del ancho de su contenedor (el h2) */
-    height: 2px;
-    background: #cb9d47;   /* Color dorado actualizado */
-    margin: 1.5rem auto 0; /* Ajusta el margen superior */
-}
+        /* Línea dorada divisoria (ajustada al texto) */
+        .linea-divisoria {
+            width: 100%;
+            height: 2px;
+            background: #cb9d47; /* Nuevo dorado */
+            margin: 1rem auto 0;
         }
         
         /* Descripción */
         header p {
-            color: #FFFFFF; /* Blanco */
+            color: #FFFFFF;
             max-width: 800px;
-            margin: 0 auto;
+            margin: 2rem auto 0;
             font-size: 1.1rem;
             font-weight: 400;
         }
@@ -75,14 +80,14 @@
             border-radius: 4px;
         }
         .servicio h3 {
-            color: #3E1E68; /* Morado oscuro */
+            color: #3E1E68;
             font-family: 'Montserrat', sans-serif;
             font-weight: 600;
         }
         
         /* FOOTER */
         footer {
-            background: #000000; /* Negro profundo */
+            background: #000000;
             color: #FFFFFF;
             text-align: center;
             padding: 2.5rem;
@@ -96,10 +101,11 @@
 <body>
     <header>
         <h1>NEXO</h1>
-        <h2>LEGAL PARTNERS SAS</h2>
         
-        <!-- Línea dorada divisoria -->
-        <div class="linea-divisoria"></div>
+        <div class="titulo-con-linea">
+            <h2>LEGAL PARTNERS SAS</h2>
+            <div class="linea-divisoria"></div>
+        </div>
         
         <p>Nexo Legal Partners SAS es una firma jurídica con sede en Bogotá, enfocada en brindar soluciones legales estratégicas a personas y empresas. Combinamos experiencia en litigios, derecho contractual, protección al consumidor y derecho cooperativo, con un enfoque moderno, cercano y práctico.</p>
     </header>
