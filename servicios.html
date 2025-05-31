@@ -6,32 +6,7 @@
     <title>Servicios | Nexo Legal Partners SAS</title>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@600&family=Montserrat:wght@500;600&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
     <style>
-        nav {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    text-align: center;
-    padding: 1rem;
-    background: #100b22;
-    border-top: 1px solid #cb9d47;
-    border-bottom: 1px solid #cb9d47;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-nav a {
-    color: #dcc5a3;
-    margin: 0 1.5rem;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    letter-spacing: 1px;
-}
-
-nav a:hover {
-    color: #ffffff;
-    border-bottom: 2px solid #cb9d47;
-}
-        /* ESTILOS BASE (igual que index.html) */
+        /* ESTILOS BASE */
         body {
             font-family: 'Raleway', sans-serif;
             margin: 0;
@@ -39,33 +14,75 @@ nav a:hover {
             background: #FFFFFF;
             color: #000000;
         }
+        
+        /* HEADER (Fondo oscuro) */
         header {
             background: #100b22;
-            padding: 4rem 2rem;
+            padding: 5rem 2rem;
             text-align: center;
         }
+        
+        /* Título "NEXO" */
         header h1 {
             font-family: 'Cormorant Upright', serif;
             font-size: 6rem;
             color: #dcc5a3;
             margin: 0;
+            letter-spacing: 2px;
+            font-weight: 600;
         }
+        
+        /* Contenedor título + línea */
         .titulo-con-linea {
             display: inline-block;
             text-align: center;
             margin: 0.5rem 0;
         }
+        
+        /* Subtítulo "LEGAL PARTNERS SAS" */
         header h2 {
             font-family: 'Montserrat', sans-serif;
             font-size: 1.8rem;
             color: #cb9d47;
             margin: 0;
+            font-weight: 600;
+            letter-spacing: 1px;
         }
+        
+        /* Línea dorada divisoria */
         .linea-divisoria {
             width: 100%;
             height: 2px;
             background: #cb9d47;
             margin: 1rem auto 0;
+        }
+
+        /* MENÚ STICKY */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+            padding: 1rem;
+            background: #100b22;
+            border-top: 1px solid #cb9d47;
+            border-bottom: 1px solid #cb9d47;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: #dcc5a3;
+            margin: 0 1.5rem;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+            border-bottom: 2px solid #cb9d47;
         }
         
         /* ESTILOS ESPECÍFICOS PARA SERVICIOS */
@@ -99,6 +116,22 @@ nav a:hover {
             color: #3E1E68;
             font-weight: 600;
             text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        /* FOOTER */
+        footer {
+            background: #000000;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 2.5rem;
+            font-family: 'Raleway', sans-serif;
+        }
+        footer a {
+            color: #cb9d47;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
         }
     </style>
 </head>
@@ -110,6 +143,12 @@ nav a:hover {
             <div class="linea-divisoria"></div>
         </div>
     </header>
+
+    <nav>
+        <a href="index.html">INICIO</a>
+        <a href="servicios.html">SERVICIOS</a>
+        <a href="contacto.html">CONTACTO</a>
+    </nav>
 
     <main class="servicio-detallado">
         <!-- Servicio 1 -->
@@ -184,11 +223,8 @@ nav a:hover {
         </div>
     </main>
 
-<footer style="padding: 2rem; text-align: center; background: #000000;">
-    <a href="mailto:nexolegalpartners@gmail.com" style="color: #cb9d47; text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 1.1rem;">
-        nexolegalpartners@gmail.com
-    </a>
-</footer>
+    <footer>
+        <a href="mailto:nexolegalpartners@gmail.com">nexolegalpartners@gmail.com</a>
     </footer>
 </body>
 </html>
