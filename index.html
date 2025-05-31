@@ -16,14 +16,12 @@
             color: #000000;
         }
         
-        /* HEADER (Fondo oscuro) */
+        /* HEADER */
         header {
             background: #100b22;
             padding: 4rem 2rem;
             text-align: center;
         }
-        
-        /* Título "NEXO" */
         header h1 {
             font-family: 'Cormorant Upright', serif;
             font-size: 6rem;
@@ -32,15 +30,11 @@
             letter-spacing: 2px;
             font-weight: 600;
         }
-        
-        /* Contenedor título + línea */
         .titulo-con-linea {
             display: inline-block;
             text-align: center;
             margin: 0.5rem 0;
         }
-        
-        /* Subtítulo "LEGAL PARTNERS SAS" */
         header h2 {
             font-family: 'Montserrat', sans-serif;
             font-size: 1.8rem;
@@ -49,8 +43,6 @@
             font-weight: 600;
             letter-spacing: 1px;
         }
-        
-        /* Línea dorada divisoria */
         .linea-divisoria {
             width: 100%;
             height: 2px;
@@ -58,7 +50,7 @@
             margin: 1rem auto 0;
         }
 
-        /* MENÚ STICKY */
+        /* MENÚ */
         nav {
             position: sticky;
             top: 0;
@@ -68,9 +60,8 @@
             background: #100b22;
             border-top: 1px solid #cb9d47;
             border-bottom: 1px solid #cb9d47;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-
         nav a {
             color: #dcc5a3;
             margin: 0 1.5rem;
@@ -80,13 +71,12 @@
             letter-spacing: 1px;
             transition: all 0.3s ease;
         }
-
         nav a:hover {
             color: #ffffff;
             border-bottom: 2px solid #cb9d47;
         }
-        
-        /* SECCIÓN QUIÉNES SOMOS */
+
+        /* QUIÉNES SOMOS */
         .quienes-somos {
             padding: 4rem 2rem;
             max-width: 1000px;
@@ -104,36 +94,55 @@
             line-height: 1.8;
         }
 
-        section class="enfoque-corporativo" style="padding: 4rem 2rem; max-width: 1000px; margin: 0 auto;">
-        <h2 style="font-family: 'Montserrat', sans-serif; color: #3E1E68; text-align: center; font-size: 2rem; margin-bottom: 2rem;">No solo resolvemos problemas, los prevenimos</h2>
-        <div style="text-align: center; margin-bottom: 2rem;">
-            <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">En <strong>Nexo Legal Partners SAS</strong> creemos que el derecho no es solo una herramienta para defenderse, sino una estrategia para crecer con seguridad. Por eso, no nos limitamos a reaccionar: anticipamos riesgos, diseñamos soluciones legales a medida y protegemos lo que más valoras.</p>
-        </div>
-        <div style="background: #FFFFFF; border-radius: 8px; padding: 2rem; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);">
-            <ul style="list-style-type: none; padding-left: 0; text-align: left; max-width: 800px; margin: 0 auto;">
-                <li style="margin-bottom: 1.5rem; padding-left: 1.5rem; position: relative;">
-                    <span style="position: absolute; left: 0; color: #007B5F; font-weight: bold;">✅</span>
-                    <strong>Cada caso lo atiende directamente un abogado con experiencia</strong>, sin intermediarios ni plantillas genéricas.
-                </li>
-                <li style="margin-bottom: 1.5rem; padding-left: 1.5rem; position: relative;">
-                    <span style="position: absolute; left: 0; color: #007B5F; font-weight: bold;">✅</span>
-                    Nuestra asesoría es <strong>personalizada, práctica y oportuna</strong>, enfocada en generar resultados reales y sostenibles.
-                </li>
-                <li style="margin-bottom: 1.5rem; padding-left: 1.5rem; position: relative;">
-                    <span style="position: absolute; left: 0; color: #007B5F; font-weight: bold;">✅</span>
-                    Integramos el <strong>análisis jurídico con una visión empresarial</strong> para ayudarte a tomar decisiones informadas, evitar sanciones y blindar tus relaciones contractuales.
-                </li>
-                <li style="margin-bottom: 1.5rem; padding-left: 1.5rem; position: relative;">
-                    <span style="position: absolute; left: 0; color: #007B5F; font-weight: bold;">✅</span>
-                    Manejamos un <strong>portafolio mixto</strong> de litigios, contratos, derecho del consumidor, cooperativas y más, adaptándonos a tus necesidades, sin importar si eres empresa, emprendedor o persona natural.
-                </li>
-            </ul>
-        </div>
-        <div style="text-align: center; margin-top: 2rem;">
-            <p style="font-size: 1.1rem; line-height: 1.8; font-style: italic; color: #3E1E68;">En un entorno cambiante, la prevención legal es tu ventaja competitiva. Y ahí estamos nosotros: como aliados estratégicos, desde el primer paso.</p>
-        </div>
-    </section>
-        
+        /* ENFOQUE CORPORATIVO */
+        .enfoque-corporativo {
+            padding: 4rem 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .enfoque-corporativo h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: #3E1E68;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .enfoque-corporativo .destacado {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        .enfoque-corporativo .lista-beneficios {
+            background: #FFFFFF;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            list-style-type: none;
+            padding-left: 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .enfoque-corporativo .lista-beneficios li {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .enfoque-corporativo .lista-beneficios li::before {
+            content: "✅";
+            position: absolute;
+            left: 0;
+            color: #007B5F;
+            font-weight: bold;
+        }
+        .enfoque-corporativo .frase-final {
+            text-align: center;
+            margin-top: 2rem;
+            font-style: italic;
+            color: #3E1E68;
+            font-size: 1.1rem;
+        }
+
         /* FOOTER */
         footer {
             background: #000000;
@@ -168,6 +177,20 @@
     <section class="quienes-somos">
         <h2>¿Quiénes somos?</h2>
         <p>Nexo Legal Partners SAS es una firma jurídica con sede en Bogotá D.C., Colombia, enfocada en brindar soluciones legales estratégicas a personas y empresas. Combinamos experiencia en litigios, derecho contractual, protección al consumidor y derecho cooperativo, con un enfoque moderno, cercano y práctico.</p>
+    </section>
+
+    <section class="enfoque-corporativo">
+        <h2>No solo resolvemos problemas, los prevenimos</h2>
+        <p class="destacado">En Nexo Legal Partners SAS creemos que el derecho no es solo una herramienta para defenderse, sino una estrategia para crecer con seguridad. Por eso, no nos limitamos a reaccionar: anticipamos riesgos, diseñamos soluciones legales a medida y protegemos lo que más valoras.</p>
+        
+        <ul class="lista-beneficios">
+            <li><strong>Cada caso lo atiende directamente un abogado con experiencia</strong>, sin intermediarios ni plantillas genéricas.</li>
+            <li>Nuestra asesoría es <strong>personalizada, práctica y oportuna</strong>, enfocada en generar resultados reales y sostenibles.</li>
+            <li>Integramos el <strong>análisis jurídico con una visión empresarial</strong> para ayudarte a tomar decisiones informadas, evitar sanciones y blindar tus relaciones contractuales.</li>
+            <li>Manejamos un <strong>portafolio mixto</strong> de litigios, contratos, derecho del consumidor, cooperativas y más, adaptándonos a tus necesidades, sin importar si eres empresa, emprendedor o persona natural.</li>
+        </ul>
+        
+        <p class="frase-final">En un entorno cambiante, la prevención legal es tu ventaja competitiva. Y ahí estamos nosotros: como aliados estratégicos, desde el primer paso.</p>
     </section>
 
     <footer>
